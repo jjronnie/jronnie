@@ -1,0 +1,15 @@
+{
+    "name": "JRonnie",
+    "short_name": "Ron",
+    "icons": [
+        {
+            "src": "/ronn.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#25274d",
+    "background_color": "#25274d",
+    "start_url": "https://jjronnie.github.io/jronnie",
+    "display": "standalone"
+}
