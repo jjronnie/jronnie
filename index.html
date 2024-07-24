@@ -416,7 +416,7 @@
                     <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
                         <li class="mx-3 active" data-filter="*">All Projects |</li>
                         <li class="mx-3" data-filter=".first">Individual |</li>
-                        <li class="mx-3" data-filter=".second">With eam</li>
+                        <li class="mx-3" data-filter=".second">With Team</li>
                     </ul>
                 </div>
             </div>
@@ -441,9 +441,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/CASE.jpg" alt="">
+                        <img class="img-fluid" src="img/casements.jpg" alt="Casements-image">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/CASE.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/casements.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://casements.netlify.app/"><i class="fa fa-link"></i></a>
                         </div>
                     </div>
@@ -643,19 +643,19 @@
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
 
-                    <p>Please Leave Me a Message Here</p>
-                  <form>
+                    <p>Please Leave Me a Message Here.</p>
+                  <form action="https://formspree.io/f/xqazegwn" method="POST">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name" readonly>
-                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" name="name" required>
+                                    <label for="name">Your Name:</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email" readonly>
-                                    <label for="email">Your Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email" required>
+                                    <label for="email">Your Email:</label>
                                 </div>
                             </div>
                             <!-- <div class="col-12">
@@ -666,8 +666,8 @@
                             </div> -->
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" readonly placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
+                                    <textarea class="form-control" name="message"  placeholder="Leave a message here" id="message" style="height: 100px" required ></textarea>
+                                    <label for="message">Message:</label>
                                 </div>
                             </div>
                             <div class="col-12">
