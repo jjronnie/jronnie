@@ -63,6 +63,65 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Sticky Top Notification Bar -->
+<div class="top-notification-bar">
+    <p>Our official Site is Live now, Visit<a href="https://thetechtower.com" target="_blank">TechTower Innovations</a> for More From Me</p>
+    <button class="close-bar" onclick="closeTopBar()"></button>
+  </div>
+  
+  <!-- CSS -->
+  <style>
+    .top-notification-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000; /* Black background */
+      color: #fff;
+      text-align: center;
+      padding: 12px 20px;
+      font-size: 14px;
+      font-family: 'Arial', sans-serif;
+      z-index: 9999;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .top-notification-bar a {
+      color: #38bdf8;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+  
+    .top-notification-bar a:hover {
+      text-decoration: underline;
+    }
+  
+    .close-bar {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+  
+    body {
+      padding-top: 50px; /* Adjust body content so it doesn't get hidden under the bar */
+    }
+  </style>
+  
+  <!-- JS -->
+  <script>
+    function closeTopBar() {
+      document.querySelector('.top-notification-bar').style.display = 'none';
+      document.body.style.paddingTop = '0'; // Reset padding when closed
+    }
+  </script>
+  
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
