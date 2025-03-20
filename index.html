@@ -746,6 +746,37 @@
     <!-- Contact End -->
 
 
+    <div class="container-xl pb-5">
+        <div class="container py-5">
+                    <p>Please Support my Tech Journey by donating $5 here</p>
+
+
+
+    <div id="paypal-button-container-P-69M41193UT1881614M7N4K2I"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AUSgMSZcbby1kajVv9kouMU3fK1xdbiPsU9PdMPCKZJUqaYiKffu3Ens9vVjzIpgAMEuJ3aVs8dSx-Hv&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'blue',
+          layout: 'vertical',
+          label: 'paypal'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-69M41193UT1881614M7N4K2I'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-69M41193UT1881614M7N4K2I'); // Renders the PayPal button
+</script>
+        </div>
+    </div>
+
+
     
 
 
