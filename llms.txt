@@ -1,0 +1,58 @@
+# Jjuuko Ronald — Portfolio (Vanilla)
+
+## About
+Personal portfolio site for Jjuuko Ronald, a Full Stack Web & Mobile App Developer based in Kampala, Uganda. Built with vanilla HTML/CSS/JS.
+
+## Tech Stack
+- HTML5, CSS3, Vanilla JS
+- Font: Ubuntu (Google Fonts)
+- Icons: Simple Icons (dev icons), inline SVGs
+- No frameworks, no build step — static files
+
+## Pages
+- `/index.html` — Home (hero, about, experience, skills, contact)
+- `/projects.html` — Project showcase
+- `/services.html` — Service offerings
+
+## Design System
+- Dark theme with CSS custom properties (`:root` in styles.css)
+- Primary color: `oklch(0.65 0.20 250)` (blue)
+- Card background: `oklch(0.13 0.005 240)`
+- Surface: `oklch(0.17 0.006 240)`
+- Muted text: `oklch(0.66 0.015 240)`
+- Border: `oklch(0.22 0.008 240 / 0.7)`
+
+## Key Features
+- Fixed nav with active pill indicator (JS-driven)
+- Hero with animated tech icon rings (42 icons, 3 concentric rings)
+- Experience timeline with left-side line and dot markers
+- Skill progress bars with scroll-triggered animation
+- Scroll-margin-top offsets for fixed nav
+- Fade-in animations on scroll
+- Staggered card animations
+- CSS `color-mix()` for hover glow effects
+- Mobile responsive with hamburger menu
+
+## File Structure
+```
+public/vanilla/
+├── index.html        — Home page
+├── projects.html     — Projects
+├── services.html     — Services
+├── styles.css        — All styles (~1370 lines)
+├── app.js            — JS (nav pill, scroll, animations)
+└── llms.txt          — This file
+```
+
+## Profile Data
+- Name: Jjuuko Ronald
+- Email: ronaldjjuuko7@gmail.com
+- Phone: +256 703 283 529
+- Location: Kampala, Uganda
+- Role: Full Stack Web & Mobile App Developer
+
+## Navigation Behavior
+- Links to `#about`, `#experience`, `#skills`, `#contact` are on-page anchor scrolls
+- Links to `/projects.html`, `/services.html` navigate to other pages
+- Active nav pill is dynamically positioned via JS
+- All pages use root-relative paths for links and `../favicon.png` for favicon
