@@ -1,10 +1,2 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^ index.html [L]
-</IfModule>
-
-<IfModule mod_headers.c>
-</IfModule>
+RewriteEngine On
+RewriteRule ^(.*)$ https://jronnie.techtowerinc.com/$1 [R=301,L]
